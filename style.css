@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;800&display=swap");
+
+body {
+  display: flex;
+  font-family: "Hanken Grotesk", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajout de cette ligne pour centrer verticalement la boîte */
+  margin: 0;
+}
+.nomargintop {
+  margin-top: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 20px;
+}
+
+.result {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.subtext {
+  font-size: 15px;
+}
+.box-l,
+.box-r {
+  width: 50%;
+  padding: 30px;
+}
+.cercle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /* Ajout de cette ligne */
+  margin: 0 30px;
+}
+
+.big-number {
+  font-size: 60px;
+  margin: 0;
+
+  font-weight: 800;
+}
+.box-l {
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.icon-text {
+  align-items: center;
+  display: flex;
+}
+
+.number {
+  margin-left: 35%;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 67%, 0.2);
+}
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.2);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.2);
+}
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.2);
+}
+.summary {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.great {
+  font-size: 25px;
+}
+
+.icon-text img {
+  margin-right: 6px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .box-l {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .box-r {
+    width: 80%;
+    padding: 30px;
+  }
+  body {
+    margin: 0;
+    height: auto;
+  }
+  .box-l {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .cercle {
+    height: 150px;
+    width: 150px;
+  }
+  .big-number {
+    font-size: 40px;
+  }
+  .subtext {
+    padding: 0 15px;
+  }
+}
